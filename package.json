@@ -1,0 +1,29 @@
+{
+  "name": "Viewport",
+  "version": "1.0.0",
+  "description": "A compact JavaScript library to write device conditional JavaScript",
+  "main": "viewport.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yousefsoliman/Viewport.js.git"
+  },
+  "keywords": [
+    "javascript",
+    "responsive",
+    "bootstrap"
+  ],
+  "author": "Yousef Soliman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yousefsoliman/Viewport.js/issues"
+  },
+  "homepage": "https://github.com/yousefsoliman/Viewport.js",
+  "devDependencies": {
+    "grunt-contrib-jasmine": "^0.9.1",
+    "grunt-contrib-uglify": "^0.9.2",
+    "karma": "^0.13.9"
+  }
+}

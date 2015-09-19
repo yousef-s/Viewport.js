@@ -1,0 +1,24 @@
+{
+  "name": "viewport",
+  "main": "Viewport.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/yousefsoliman/Viewport.js",
+  "description": "A compact JavaScript library to write device conditional JavaScript",
+  "keywords": [
+    "javascript",
+    "responsive",
+    "responsive",
+    "design"
+  ],
+  "authors": [
+    "Yousef Soliman"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
