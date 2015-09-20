@@ -16,18 +16,18 @@ Run the following from your command line to install the `src/` folder to your `b
 
 The core library methods take in a condition, which is effectively an object with properties of device conditions to be met. They take the following structure;
 
-  {
-    height: {
-      min: 100,
-      max: 600
-    },
-    width: {
-      min: 1024,
-      max: 1920
-    },
-    pixelRatio: 2,
-    orientation: 'landscape' // portrait|landscape
-  }
+    {
+      height: {
+        min: 100,
+        max: 600
+      },
+      width: {
+        min: 1024,
+        max: 1920
+      },
+      pixelRatio: 2,
+      orientation: 'landscape' // portrait|landscape
+    }
 
 Not supplying any property will mean that by default that property will be matched.
 
@@ -37,20 +37,20 @@ Calling this method will assess the passed `condition`, and return `true` or `fa
 
 ####Example
 
-  Viewport().matches({
-    height: {
-      min: 100, 
-      max: 1000
-    },
-    width: {
-      min: 1024,
-      max: 1920
-    },
-    pixelRatio: 2,
-    orientation: 'portrait'
-  }, function() {
-    alert("Yay! We successfully matched.");
-  });
+    Viewport().matches({
+      height: {
+        min: 100, 
+        max: 1000
+      },
+      width: {
+        min: 1024,
+        max: 1920
+      },
+      pixelRatio: 2,
+      orientation: 'portrait'
+    }, function() {
+      alert("Yay! We successfully matched.");
+    });
   
 ###Viewport().register(alias (String), condition (Object));
 
@@ -58,16 +58,16 @@ Calling this method will save the condition to an alias which you can then pass 
 
 ####Example
 
-  Viewport().register('bootstrap-xs-retina',
-    {
-      width: {max: 767}, 
-      pixelRatio: 2
+    Viewport().register('bootstrap-xs-retina',
+      {
+        width: {max: 767}, 
+        pixelRatio: 2
+      }
+    );
+    
+    if (Viewport().matches('bootstrap-xs-retina')) {
+      // Do something
     }
-  );
-  
-  if (Viewport().matches('bootstrap-xs-retina')) {
-    // Do something
-  }
 
 ## Browser Support
 
